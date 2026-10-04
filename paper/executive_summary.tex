@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}
+\usepackage[a4paper,margin=0.75in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage{xcolor,booktabs,tabularx,enumitem,graphicx,titlesec}
+\definecolor{teal}{HTML}{0B7A75}\definecolor{navy}{HTML}{0F1C2E}\definecolor{risk}{HTML}{C4421A}
+\titleformat{\section}{\normalsize\bfseries\color{teal}\MakeUppercase}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\pagestyle{empty}
+\begin{document}
+{\color{teal}\footnotesize\bfseries EXECUTIVE SUMMARY \quad\textbar\quad CUSTOMER RETENTION \quad\textbar\quad EUROPEAN BANK, 2025}
+
+\vspace{4pt}
+{\LARGE\bfseries\color{navy} Customers stay for how they use the bank, not for how much they hold}
+
+\vspace{2pt}
+{\small Prepared by Amara Suchitra, Machine Learning Intern, Unified Mentor. Based on 10,000 customer records from France, Germany and Spain.}
+
+\vspace{4pt}\hrule\vspace{2pt}
+
+\section{The decision}
+Direct retention effort at \textbf{inactive customers with large balances} and at \textbf{single-product customers}. One in five customers (20.4\%) left the bank. The customers most likely to leave are not the ones with the least money; they are the ones who have stopped using the bank.
+
+\section{What the evidence shows}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{4.6cm}X@{}}
+\toprule
+Engagement matters & Inactive customers leave almost twice as often as active ones: \textbf{26.9\%} against 14.3\%.\\
+\midrule
+Balance does not protect & Customers holding EUR 100,000 or more leave at \textbf{25.2\%}, against 15.9\% for the rest. Half of them (2,356) are inactive, and \textbf{32.8\%} of those left, taking EUR 101.6 million.\\
+\midrule
+Two products is the best position & Churn is 27.7\% with one product and \textbf{7.6\%} with two. Of the 326 customers holding three or four, 85.9\% left.\\
+\midrule
+Credit cards do not hold customers & 20.2\% with a card, 20.8\% without. The difference is not statistically significant.\\
+\midrule
+Age raises the stakes & Among customers aged 51 to 60, \textbf{85.7\%} of inactive customers left against 34.7\% of active ones.\\
+\bottomrule
+\end{tabularx}
+
+\section{Recommended actions}
+\begin{enumerate}[leftmargin=1.4em,itemsep=2pt,topsep=2pt]
+\item \textbf{Call the 1,584 inactive premium customers still at the bank, starting in Germany} (where this group leaves at 45.1\%). They hold EUR 210.6 million. If reactivation brought them to the churn rate of active premium customers, about 349 more would stay, holding roughly EUR 46 million. This is an upper estimate.
+\item \textbf{Offer a second product to the 2,078 active single-product customers.} They already use the bank and are the easiest to deepen.
+\item \textbf{Review sales beyond two products} before repeating them.
+\item \textbf{Assign relationship managers to inactive customers aged 51 to 60.}
+\item \textbf{Move loyalty budget away from credit cards} and towards activity and the second product.
+\end{enumerate}
+
+\section{The tools delivered}
+\textbf{Relationship Strength Index.} A 0 to 100 score built from product fit, activity, tenure and card ownership. Customers scoring under 50 leave at 42.1\%; those scoring 80 or more leave at 5.6\%. \textbf{Churn model.} The most accurate of seven models tested (86.6\% accuracy, AUC 0.869, on customers it had not seen); the riskiest tenth contains 41.1\% of all leavers. \textbf{Live dashboard.} Filters by engagement, country, products, balance and salary, with a downloadable call list.
+
+\section{What to keep in mind}
+The data is a single snapshot with no dates, so it shows which behaviours go with leaving, not that they cause it. The retained-balance figure is a scenario, not a forecast. A small controlled campaign on the premium inactive group would confirm the size of the effect before a full rollout. The three-or-more-products group is small (326 customers).
+\end{document}

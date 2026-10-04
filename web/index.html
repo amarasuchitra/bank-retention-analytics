@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retention Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><div><b>Retention Intelligence</b><span>European Bank · 10,000 customers · 2025</span></div></div>
+    <nav class="tabs" id="tabs" role="tablist">
+      <button role="tab" data-t="overview" class="on">Engagement</button>
+      <button role="tab" data-t="products">Products</button>
+      <button role="tab" data-t="premium">Premium at risk</button>
+      <button role="tab" data-t="strength">Relationship strength</button>
+      <button role="tab" data-t="actions">Recommendations</button>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <section class="filters" id="filters" aria-label="Filters">
+    <div class="f-head">
+      <button id="fToggle" class="f-toggle" aria-expanded="false" aria-controls="fBody"><span class="f-title">Filters</span><span id="fActiveN" class="f-badge" hidden></span><span class="chev" aria-hidden="true"></span></button>
+      <div class="f-count"><span id="nView" class="mono">10,000</span> customers in view</div>
+      <button id="reset" class="link">Reset</button>
+    </div>
+    <div class="f-body" id="fBody">
+      <div class="f-group"><label>Engagement</label><div class="seg" id="fActive"><button data-v="all" class="on">All</button><button data-v="1">Active</button><button data-v="0">Inactive</button></div></div>
+      <div class="f-group"><label>Country</label><div class="chips" id="fGeo"><button data-v="0" class="on">France</button><button data-v="1" class="on">Germany</button><button data-v="2" class="on">Spain</button></div></div>
+      <div class="f-group"><label>Credit card</label><div class="seg" id="fCard"><button data-v="all" class="on">All</button><button data-v="1">Has card</button><button data-v="0">No card</button></div></div>
+      <div class="f-group"><label for="pMin">Products held <output id="oProd" class="mono">1 to 4</output></label>
+        <div class="dual"><span>from</span><input type="range" id="pMin" min="1" max="4" value="1" step="1" aria-label="Minimum products"><span>to</span><input type="range" id="pMax" min="1" max="4" value="4" step="1" aria-label="Maximum products"></div></div>
+      <div class="f-group"><label for="fBal">Minimum balance <output id="oBal" class="mono">Any</output></label><input type="range" id="fBal" min="0" max="200000" step="10000" value="0"></div>
+      <div class="f-group"><label for="fSal">Minimum salary <output id="oSal" class="mono">Any</output></label><input type="range" id="fSal" min="0" max="180000" step="10000" value="0"></div>
+      <div class="f-group"><label for="fAge">Minimum age <output id="oAge" class="mono">18+</output></label><input type="range" id="fAge" min="18" max="70" step="1" value="18"></div>
+    </div>
+  </section>
+  <main id="main"></main>
+</div>
+<script src="vendor/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

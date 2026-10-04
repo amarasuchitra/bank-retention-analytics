@@ -1,0 +1,67 @@
+{
+ "Gradient boosting (current)": {
+  "auc": 0.865,
+  "accuracy": 0.8628,
+  "precision": 0.7645,
+  "recall": 0.4718,
+  "f1": 0.5835,
+  "false_alarms": 296.0,
+  "brier": 0.1015,
+  "ece": 0.0093,
+  "confident_wrong": 217.0,
+  "f1_tuned": 0.6266,
+  "threshold": 0.3
+ },
+ "XGBoost": {
+  "auc": 0.8677,
+  "accuracy": 0.8647,
+  "precision": 0.7668,
+  "recall": 0.4822,
+  "f1": 0.5921,
+  "false_alarms": 298.6667,
+  "brier": 0.1008,
+  "ece": 0.0051,
+  "confident_wrong": 241.6667,
+  "f1_tuned": 0.6264,
+  "threshold": 0.2933
+ },
+ "LightGBM": {
+  "auc": 0.8667,
+  "accuracy": 0.8647,
+  "precision": 0.7524,
+  "recall": 0.5002,
+  "f1": 0.6009,
+  "false_alarms": 335.3333,
+  "brier": 0.101,
+  "ece": 0.009,
+  "confident_wrong": 268.3333,
+  "f1_tuned": 0.6232,
+  "threshold": 0.28
+ },
+ "CatBoost": {
+  "auc": 0.8681,
+  "accuracy": 0.8646,
+  "precision": 0.7579,
+  "recall": 0.4927,
+  "f1": 0.5972,
+  "false_alarms": 320.6667,
+  "brier": 0.1007,
+  "ece": 0.0062,
+  "confident_wrong": 254.3333,
+  "f1_tuned": 0.6302,
+  "threshold": 0.2967
+ },
+ "Blend (XGB + LGBM + CatBoost)": {
+  "auc": 0.8687,
+  "accuracy": 0.8656,
+  "precision": 0.7628,
+  "recall": 0.4937,
+  "f1": 0.5994,
+  "false_alarms": 312.6667,
+  "brier": 0.1004,
+  "ece": 0.0061,
+  "confident_wrong": 250.6667,
+  "f1_tuned": 0.6279,
+  "threshold": 0.2833
+ }
+}

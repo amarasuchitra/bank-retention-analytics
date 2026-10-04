@@ -1,0 +1,883 @@
+{
+ "checks": {
+  "rows": 10000,
+  "missing_values": 0,
+  "duplicate_customers": 0,
+  "binary_ok": true,
+  "products_range": [
+   1,
+   4
+  ],
+  "countries": [
+   "France",
+   "Germany",
+   "Spain"
+  ]
+ },
+ "high_balance_threshold": 100000,
+ "kpis": {
+  "overall_churn": 0.2037,
+  "engagement_retention_ratio": 1.88,
+  "active_churn": 0.1427,
+  "inactive_churn": 0.2685,
+  "product_depth_index": 1.28,
+  "one_product_churn": 0.2771,
+  "two_product_churn": 0.0758,
+  "three_plus_churn": 0.8589,
+  "three_plus_customers": 326,
+  "three_plus_ci": [
+   0.8169,
+   0.8925
+  ],
+  "high_balance_disengagement_rate": 0.4909,
+  "high_balance_inactive_churn": 0.3277,
+  "high_balance_inactive_customers": 2356,
+  "high_balance_churn": 0.2523,
+  "other_balance_churn": 0.1588,
+  "balance_at_risk": 312265431.0,
+  "balance_lost_hbi": 101638895.0,
+  "credit_card_stickiness": 0.63,
+  "card_churn": 0.2018,
+  "no_card_churn": 0.2081,
+  "rsi_mean": 59.6,
+  "rsi_stayed": 63.6,
+  "rsi_left": 44.1,
+  "sticky_churn": 0.0556,
+  "sticky_customers": 2446,
+  "whatif_customers_kept": 349,
+  "whatif_balance_kept": 46208080.0,
+  "high_balance_active_churn": 0.1797
+ },
+ "tables": {
+  "by_active": [
+   {
+    "IsActiveMember": 0,
+    "churn": 0.2685,
+    "customers": 4849,
+    "left": 1302
+   },
+   {
+    "IsActiveMember": 1,
+    "churn": 0.1427,
+    "customers": 5151,
+    "left": 735
+   }
+  ],
+  "by_products": [
+   {
+    "NumOfProducts": 1,
+    "churn": 0.2771,
+    "customers": 5084,
+    "left": 1409
+   },
+   {
+    "NumOfProducts": 2,
+    "churn": 0.0758,
+    "customers": 4590,
+    "left": 348
+   },
+   {
+    "NumOfProducts": 3,
+    "churn": 0.8271,
+    "customers": 266,
+    "left": 220
+   },
+   {
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 60,
+    "left": 60
+   }
+  ],
+  "by_active_products": [
+   {
+    "IsActiveMember": 0,
+    "NumOfProducts": 1,
+    "churn": 0.3665,
+    "customers": 2521,
+    "left": 924
+   },
+   {
+    "IsActiveMember": 0,
+    "NumOfProducts": 2,
+    "churn": 0.0989,
+    "customers": 2144,
+    "left": 212
+   },
+   {
+    "IsActiveMember": 0,
+    "NumOfProducts": 3,
+    "churn": 0.8824,
+    "customers": 153,
+    "left": 135
+   },
+   {
+    "IsActiveMember": 0,
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 31,
+    "left": 31
+   },
+   {
+    "IsActiveMember": 1,
+    "NumOfProducts": 1,
+    "churn": 0.1892,
+    "customers": 2563,
+    "left": 485
+   },
+   {
+    "IsActiveMember": 1,
+    "NumOfProducts": 2,
+    "churn": 0.0556,
+    "customers": 2446,
+    "left": 136
+   },
+   {
+    "IsActiveMember": 1,
+    "NumOfProducts": 3,
+    "churn": 0.7522,
+    "customers": 113,
+    "left": 85
+   },
+   {
+    "IsActiveMember": 1,
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 29,
+    "left": 29
+   }
+  ],
+  "by_profile": [
+   {
+    "Profile": "Active engaged",
+    "churn": 0.0966,
+    "customers": 2588,
+    "left": 250
+   },
+   {
+    "Profile": "Active, low product",
+    "churn": 0.1892,
+    "customers": 2563,
+    "left": 485
+   },
+   {
+    "Profile": "Inactive disengaged",
+    "churn": 0.2126,
+    "customers": 2493,
+    "left": 530
+   },
+   {
+    "Profile": "Inactive, high balance",
+    "churn": 0.3277,
+    "customers": 2356,
+    "left": 772
+   }
+  ],
+  "by_card": [
+   {
+    "HasCrCard": 0,
+    "churn": 0.2081,
+    "customers": 2945,
+    "left": 613
+   },
+   {
+    "HasCrCard": 1,
+    "churn": 0.2018,
+    "customers": 7055,
+    "left": 1424
+   }
+  ],
+  "by_country": [
+   {
+    "Geography": "France",
+    "churn": 0.1615,
+    "customers": 5014,
+    "left": 810
+   },
+   {
+    "Geography": "Germany",
+    "churn": 0.3244,
+    "customers": 2509,
+    "left": 814
+   },
+   {
+    "Geography": "Spain",
+    "churn": 0.1667,
+    "customers": 2477,
+    "left": 413
+   }
+  ],
+  "by_gender": [
+   {
+    "Gender": "Female",
+    "churn": 0.2507,
+    "customers": 4543,
+    "left": 1139
+   },
+   {
+    "Gender": "Male",
+    "churn": 0.1646,
+    "customers": 5457,
+    "left": 898
+   }
+  ],
+  "by_age_active": [
+   {
+    "AgeBand": "18-30",
+    "IsActiveMember": 0,
+    "churn": 0.1008,
+    "customers": 962,
+    "left": 97
+   },
+   {
+    "AgeBand": "18-30",
+    "IsActiveMember": 1,
+    "churn": 0.0507,
+    "customers": 1006,
+    "left": 51
+   },
+   {
+    "AgeBand": "31-40",
+    "IsActiveMember": 0,
+    "churn": 0.1494,
+    "customers": 2236,
+    "left": 334
+   },
+   {
+    "AgeBand": "31-40",
+    "IsActiveMember": 1,
+    "churn": 0.0921,
+    "customers": 2215,
+    "left": 204
+   },
+   {
+    "AgeBand": "41-50",
+    "IsActiveMember": 0,
+    "churn": 0.416,
+    "customers": 1226,
+    "left": 510
+   },
+   {
+    "AgeBand": "41-50",
+    "IsActiveMember": 1,
+    "churn": 0.2541,
+    "customers": 1094,
+    "left": 278
+   },
+   {
+    "AgeBand": "51-60",
+    "IsActiveMember": 0,
+    "churn": 0.8571,
+    "customers": 336,
+    "left": 288
+   },
+   {
+    "AgeBand": "51-60",
+    "IsActiveMember": 1,
+    "churn": 0.3471,
+    "customers": 461,
+    "left": 160
+   },
+   {
+    "AgeBand": "61+",
+    "IsActiveMember": 0,
+    "churn": 0.8202,
+    "customers": 89,
+    "left": 73
+   },
+   {
+    "AgeBand": "61+",
+    "IsActiveMember": 1,
+    "churn": 0.112,
+    "customers": 375,
+    "left": 42
+   }
+  ],
+  "by_balance_active": [
+   {
+    "HighBalance": 0,
+    "IsActiveMember": 0,
+    "churn": 0.2126,
+    "customers": 2493,
+    "left": 530
+   },
+   {
+    "HighBalance": 0,
+    "IsActiveMember": 1,
+    "churn": 0.1093,
+    "customers": 2708,
+    "left": 296
+   },
+   {
+    "HighBalance": 1,
+    "IsActiveMember": 0,
+    "churn": 0.3277,
+    "customers": 2356,
+    "left": 772
+   },
+   {
+    "HighBalance": 1,
+    "IsActiveMember": 1,
+    "churn": 0.1797,
+    "customers": 2443,
+    "left": 439
+   }
+  ],
+  "by_rsi_tier": [
+   {
+    "RSITier": "Moderate (50-79)",
+    "churn": 0.1495,
+    "customers": 4715,
+    "left": 705
+   },
+   {
+    "RSITier": "Strong (80-100)",
+    "churn": 0.0556,
+    "customers": 2446,
+    "left": 136
+   },
+   {
+    "RSITier": "Weak (0-49)",
+    "churn": 0.4213,
+    "customers": 2839,
+    "left": 1196
+   }
+  ],
+  "by_mismatch": [
+   {
+    "Mismatch": "Balance over twice salary",
+    "churn": 0.2447,
+    "customers": 1884,
+    "left": 461
+   },
+   {
+    "Mismatch": "Balanced",
+    "churn": 0.2084,
+    "customers": 6335,
+    "left": 1320
+   },
+   {
+    "Mismatch": "High salary, empty account",
+    "churn": 0.1437,
+    "customers": 1781,
+    "left": 256
+   }
+  ],
+  "by_tenure": [
+   {
+    "Tenure": 0,
+    "churn": 0.23,
+    "customers": 413,
+    "left": 95
+   },
+   {
+    "Tenure": 1,
+    "churn": 0.2242,
+    "customers": 1035,
+    "left": 232
+   },
+   {
+    "Tenure": 2,
+    "churn": 0.1918,
+    "customers": 1048,
+    "left": 201
+   },
+   {
+    "Tenure": 3,
+    "churn": 0.2111,
+    "customers": 1009,
+    "left": 213
+   },
+   {
+    "Tenure": 4,
+    "churn": 0.2053,
+    "customers": 989,
+    "left": 203
+   },
+   {
+    "Tenure": 5,
+    "churn": 0.2065,
+    "customers": 1012,
+    "left": 209
+   },
+   {
+    "Tenure": 6,
+    "churn": 0.2027,
+    "customers": 967,
+    "left": 196
+   },
+   {
+    "Tenure": 7,
+    "churn": 0.1722,
+    "customers": 1028,
+    "left": 177
+   },
+   {
+    "Tenure": 8,
+    "churn": 0.1922,
+    "customers": 1025,
+    "left": 197
+   },
+   {
+    "Tenure": 9,
+    "churn": 0.2165,
+    "customers": 984,
+    "left": 213
+   },
+   {
+    "Tenure": 10,
+    "churn": 0.2061,
+    "customers": 490,
+    "left": 101
+   }
+  ],
+  "by_country_products": [
+   {
+    "Geography": "France",
+    "NumOfProducts": 1,
+    "churn": 0.2243,
+    "customers": 2514,
+    "left": 564
+   },
+   {
+    "Geography": "France",
+    "NumOfProducts": 2,
+    "churn": 0.057,
+    "customers": 2367,
+    "left": 135
+   },
+   {
+    "Geography": "France",
+    "NumOfProducts": 3,
+    "churn": 0.7885,
+    "customers": 104,
+    "left": 82
+   },
+   {
+    "Geography": "France",
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 29,
+    "left": 29
+   },
+   {
+    "Geography": "Germany",
+    "NumOfProducts": 1,
+    "churn": 0.4285,
+    "customers": 1349,
+    "left": 578
+   },
+   {
+    "Geography": "Germany",
+    "NumOfProducts": 2,
+    "churn": 0.1212,
+    "customers": 1040,
+    "left": 126
+   },
+   {
+    "Geography": "Germany",
+    "NumOfProducts": 3,
+    "churn": 0.8958,
+    "customers": 96,
+    "left": 86
+   },
+   {
+    "Geography": "Germany",
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 24,
+    "left": 24
+   },
+   {
+    "Geography": "Spain",
+    "NumOfProducts": 1,
+    "churn": 0.2187,
+    "customers": 1221,
+    "left": 267
+   },
+   {
+    "Geography": "Spain",
+    "NumOfProducts": 2,
+    "churn": 0.0735,
+    "customers": 1183,
+    "left": 87
+   },
+   {
+    "Geography": "Spain",
+    "NumOfProducts": 3,
+    "churn": 0.7879,
+    "customers": 66,
+    "left": 52
+   },
+   {
+    "Geography": "Spain",
+    "NumOfProducts": 4,
+    "churn": 1.0,
+    "customers": 7,
+    "left": 7
+   }
+  ],
+  "by_rsi_bin": [
+   {
+    "RSIBin": 0,
+    "churn": 0.9062,
+    "customers": 64,
+    "left": 58
+   },
+   {
+    "RSIBin": 10,
+    "churn": 0.9018,
+    "customers": 112,
+    "left": 101
+   },
+   {
+    "RSIBin": 20,
+    "churn": 0.3751,
+    "customers": 901,
+    "left": 338
+   },
+   {
+    "RSIBin": 30,
+    "churn": 0.3776,
+    "customers": 1589,
+    "left": 600
+   },
+   {
+    "RSIBin": 40,
+    "churn": 0.5723,
+    "customers": 173,
+    "left": 99
+   },
+   {
+    "RSIBin": 50,
+    "churn": 0.1653,
+    "customers": 1742,
+    "left": 288
+   },
+   {
+    "RSIBin": 60,
+    "churn": 0.1407,
+    "customers": 2814,
+    "left": 396
+   },
+   {
+    "RSIBin": 70,
+    "churn": 0.1321,
+    "customers": 159,
+    "left": 21
+   },
+   {
+    "RSIBin": 80,
+    "churn": 0.0612,
+    "customers": 898,
+    "left": 55
+   },
+   {
+    "RSIBin": 90,
+    "churn": 0.0523,
+    "customers": 1548,
+    "left": 81
+   }
+  ]
+ },
+ "tests": {
+  "IsActiveMember": {
+   "chi2": 243.0,
+   "p": 8.785858269303703e-55,
+   "cramers_v": 0.156
+  },
+  "NumOfProducts": {
+   "chi2": 1503.6,
+   "p": 0.0,
+   "cramers_v": 0.388
+  },
+  "HasCrCard": {
+   "chi2": 0.5,
+   "p": 0.49237236141554686,
+   "cramers_v": 0.007
+  },
+  "HighBalance": {
+   "chi2": 134.0,
+   "p": 5.386154121781928e-31,
+   "cramers_v": 0.116
+  },
+  "Geography": {
+   "chi2": 301.3,
+   "p": 3.8303176053541544e-66,
+   "cramers_v": 0.174
+  },
+  "Gender": {
+   "chi2": 112.9,
+   "p": 2.2482100097131755e-26,
+   "cramers_v": 0.106
+  },
+  "rsi_spearman": {
+   "rho": -0.328,
+   "p": 6.46371253242971e-250
+  },
+  "rsi_auc": 0.735
+ },
+ "model": {
+  "Blend": {
+   "auc": 0.87,
+   "avg_precision": 0.712
+  },
+  "Logistic regression": {
+   "auc": 0.766
+  },
+  "Behaviour only": {
+   "auc": 0.772
+  },
+  "Demographics only": {
+   "auc": 0.774
+  },
+  "importance": [
+   {
+    "feature": "NumOfProducts",
+    "auc_drop": 0.1246
+   },
+   {
+    "feature": "Age",
+    "auc_drop": 0.1157
+   },
+   {
+    "feature": "Balance",
+    "auc_drop": 0.0388
+   },
+   {
+    "feature": "IsActiveMember",
+    "auc_drop": 0.0298
+   },
+   {
+    "feature": "Geography",
+    "auc_drop": 0.0275
+   },
+   {
+    "feature": "Gender",
+    "auc_drop": 0.0078
+   },
+   {
+    "feature": "CreditScore",
+    "auc_drop": 0.0023
+   },
+   {
+    "feature": "EstimatedSalary",
+    "auc_drop": 0.0008
+   },
+   {
+    "feature": "HasCrCard",
+    "auc_drop": 0.0001
+   },
+   {
+    "feature": "Tenure",
+    "auc_drop": -0.0005
+   }
+  ],
+  "top_decile_capture": 0.411,
+  "top_decile_churn": 0.837,
+  "benchmark": {
+   "models": {
+    "Logistic regression | original fields": {
+     "auc": 0.7657,
+     "auc_sd": 0.0111,
+     "avg_precision": 0.4655,
+     "accuracy": 0.8107,
+     "f1_at_0.5": 0.3122,
+     "f1_tuned": 0.4934,
+     "top_decile_capture": 0.2721
+    },
+    "Random forest | original fields": {
+     "auc": 0.8612,
+     "auc_sd": 0.0055,
+     "avg_precision": 0.6939,
+     "accuracy": 0.8633,
+     "f1_at_0.5": 0.58,
+     "f1_tuned": 0.6221,
+     "top_decile_capture": 0.4083
+    },
+    "Gradient boosting (sklearn, default) | original fields": {
+     "auc": 0.8653,
+     "auc_sd": 0.0067,
+     "avg_precision": 0.703,
+     "accuracy": 0.8628,
+     "f1_at_0.5": 0.5835,
+     "f1_tuned": 0.6266,
+     "top_decile_capture": 0.4063
+    },
+    "XGBoost | original fields": {
+     "auc": 0.868,
+     "auc_sd": 0.0059,
+     "avg_precision": 0.7078,
+     "accuracy": 0.8647,
+     "f1_at_0.5": 0.5921,
+     "f1_tuned": 0.6264,
+     "top_decile_capture": 0.4102
+    },
+    "LightGBM | original fields": {
+     "auc": 0.8671,
+     "auc_sd": 0.0052,
+     "avg_precision": 0.7072,
+     "accuracy": 0.8647,
+     "f1_at_0.5": 0.6009,
+     "f1_tuned": 0.6232,
+     "top_decile_capture": 0.4084
+    },
+    "CatBoost | original fields": {
+     "auc": 0.8684,
+     "auc_sd": 0.006,
+     "avg_precision": 0.7087,
+     "accuracy": 0.8646,
+     "f1_at_0.5": 0.5972,
+     "f1_tuned": 0.6302,
+     "top_decile_capture": 0.4088
+    },
+    "Logistic regression | engineered features": {
+     "auc": 0.8396,
+     "auc_sd": 0.0102,
+     "avg_precision": 0.6588,
+     "accuracy": 0.8544,
+     "f1_at_0.5": 0.5405,
+     "f1_tuned": 0.5957,
+     "top_decile_capture": 0.3898
+    },
+    "Random forest | engineered features": {
+     "auc": 0.8585,
+     "auc_sd": 0.0071,
+     "avg_precision": 0.6902,
+     "accuracy": 0.8624,
+     "f1_at_0.5": 0.5827,
+     "f1_tuned": 0.6139,
+     "top_decile_capture": 0.4009
+    },
+    "Gradient boosting (sklearn, default) | engineered features": {
+     "auc": 0.8655,
+     "auc_sd": 0.0072,
+     "avg_precision": 0.7019,
+     "accuracy": 0.8635,
+     "f1_at_0.5": 0.5871,
+     "f1_tuned": 0.6258,
+     "top_decile_capture": 0.4073
+    },
+    "XGBoost | engineered features": {
+     "auc": 0.8669,
+     "auc_sd": 0.0066,
+     "avg_precision": 0.7051,
+     "accuracy": 0.8654,
+     "f1_at_0.5": 0.5961,
+     "f1_tuned": 0.6284,
+     "top_decile_capture": 0.4065
+    },
+    "LightGBM | engineered features": {
+     "auc": 0.866,
+     "auc_sd": 0.0057,
+     "avg_precision": 0.7051,
+     "accuracy": 0.8652,
+     "f1_at_0.5": 0.6043,
+     "f1_tuned": 0.6271,
+     "top_decile_capture": 0.4081
+    },
+    "CatBoost | engineered features": {
+     "auc": 0.8678,
+     "auc_sd": 0.0064,
+     "avg_precision": 0.7068,
+     "accuracy": 0.8642,
+     "f1_at_0.5": 0.5941,
+     "f1_tuned": 0.6267,
+     "top_decile_capture": 0.4071
+    },
+    "Blend: XGBoost + LightGBM + CatBoost": {
+     "auc": 0.8691,
+     "auc_sd": 0.0056,
+     "avg_precision": 0.7102,
+     "accuracy": 0.8656,
+     "f1_at_0.5": 0.5994,
+     "f1_tuned": 0.6279,
+     "top_decile_capture": 0.4104
+    }
+   },
+   "best_feature_set": {
+    "XGBoost": "original fields",
+    "LightGBM": "original fields",
+    "CatBoost": "original fields"
+   },
+   "smote_leaky": {
+    "auc": 0.9232,
+    "accuracy": 0.8496,
+    "f1": 0.8492
+   },
+   "smote_correct": {
+    "auc": 0.8299,
+    "accuracy": 0.8119,
+    "f1": 0.5745
+   },
+   "protocol": "repeated stratified 5-fold x3, out-of-fold"
+  },
+  "reliability": {
+   "Gradient boosting (current)": {
+    "auc": 0.865,
+    "accuracy": 0.8628,
+    "precision": 0.7645,
+    "recall": 0.4718,
+    "f1": 0.5835,
+    "false_alarms": 296.0,
+    "brier": 0.1015,
+    "ece": 0.0093,
+    "confident_wrong": 217.0,
+    "f1_tuned": 0.6266,
+    "threshold": 0.3
+   },
+   "XGBoost": {
+    "auc": 0.8677,
+    "accuracy": 0.8647,
+    "precision": 0.7668,
+    "recall": 0.4822,
+    "f1": 0.5921,
+    "false_alarms": 298.6667,
+    "brier": 0.1008,
+    "ece": 0.0051,
+    "confident_wrong": 241.6667,
+    "f1_tuned": 0.6264,
+    "threshold": 0.2933
+   },
+   "LightGBM": {
+    "auc": 0.8667,
+    "accuracy": 0.8647,
+    "precision": 0.7524,
+    "recall": 0.5002,
+    "f1": 0.6009,
+    "false_alarms": 335.3333,
+    "brier": 0.101,
+    "ece": 0.009,
+    "confident_wrong": 268.3333,
+    "f1_tuned": 0.6232,
+    "threshold": 0.28
+   },
+   "CatBoost": {
+    "auc": 0.8681,
+    "accuracy": 0.8646,
+    "precision": 0.7579,
+    "recall": 0.4927,
+    "f1": 0.5972,
+    "false_alarms": 320.6667,
+    "brier": 0.1007,
+    "ece": 0.0062,
+    "confident_wrong": 254.3333,
+    "f1_tuned": 0.6302,
+    "threshold": 0.2967
+   },
+   "Blend (XGB + LGBM + CatBoost)": {
+    "auc": 0.8687,
+    "accuracy": 0.8656,
+    "precision": 0.7628,
+    "recall": 0.4937,
+    "f1": 0.5994,
+    "false_alarms": 312.6667,
+    "brier": 0.1004,
+    "ece": 0.0061,
+    "confident_wrong": 250.6667,
+    "f1_tuned": 0.6279,
+    "threshold": 0.2833
+   }
+  }
+ }
+}

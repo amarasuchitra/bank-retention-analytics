@@ -1,0 +1,137 @@
+{
+ "models": {
+  "Logistic regression | original fields": {
+   "auc": 0.7657,
+   "auc_sd": 0.0111,
+   "avg_precision": 0.4655,
+   "accuracy": 0.8107,
+   "f1_at_0.5": 0.3122,
+   "f1_tuned": 0.4934,
+   "top_decile_capture": 0.2721
+  },
+  "Random forest | original fields": {
+   "auc": 0.8612,
+   "auc_sd": 0.0055,
+   "avg_precision": 0.6939,
+   "accuracy": 0.8633,
+   "f1_at_0.5": 0.58,
+   "f1_tuned": 0.6221,
+   "top_decile_capture": 0.4083
+  },
+  "Gradient boosting (sklearn, default) | original fields": {
+   "auc": 0.8653,
+   "auc_sd": 0.0067,
+   "avg_precision": 0.703,
+   "accuracy": 0.8628,
+   "f1_at_0.5": 0.5835,
+   "f1_tuned": 0.6266,
+   "top_decile_capture": 0.4063
+  },
+  "XGBoost | original fields": {
+   "auc": 0.868,
+   "auc_sd": 0.0059,
+   "avg_precision": 0.7078,
+   "accuracy": 0.8647,
+   "f1_at_0.5": 0.5921,
+   "f1_tuned": 0.6264,
+   "top_decile_capture": 0.4102
+  },
+  "LightGBM | original fields": {
+   "auc": 0.8671,
+   "auc_sd": 0.0052,
+   "avg_precision": 0.7072,
+   "accuracy": 0.8647,
+   "f1_at_0.5": 0.6009,
+   "f1_tuned": 0.6232,
+   "top_decile_capture": 0.4084
+  },
+  "CatBoost | original fields": {
+   "auc": 0.8684,
+   "auc_sd": 0.006,
+   "avg_precision": 0.7087,
+   "accuracy": 0.8646,
+   "f1_at_0.5": 0.5972,
+   "f1_tuned": 0.6302,
+   "top_decile_capture": 0.4088
+  },
+  "Logistic regression | engineered features": {
+   "auc": 0.8396,
+   "auc_sd": 0.0102,
+   "avg_precision": 0.6588,
+   "accuracy": 0.8544,
+   "f1_at_0.5": 0.5405,
+   "f1_tuned": 0.5957,
+   "top_decile_capture": 0.3898
+  },
+  "Random forest | engineered features": {
+   "auc": 0.8585,
+   "auc_sd": 0.0071,
+   "avg_precision": 0.6902,
+   "accuracy": 0.8624,
+   "f1_at_0.5": 0.5827,
+   "f1_tuned": 0.6139,
+   "top_decile_capture": 0.4009
+  },
+  "Gradient boosting (sklearn, default) | engineered features": {
+   "auc": 0.8655,
+   "auc_sd": 0.0072,
+   "avg_precision": 0.7019,
+   "accuracy": 0.8635,
+   "f1_at_0.5": 0.5871,
+   "f1_tuned": 0.6258,
+   "top_decile_capture": 0.4073
+  },
+  "XGBoost | engineered features": {
+   "auc": 0.8669,
+   "auc_sd": 0.0066,
+   "avg_precision": 0.7051,
+   "accuracy": 0.8654,
+   "f1_at_0.5": 0.5961,
+   "f1_tuned": 0.6284,
+   "top_decile_capture": 0.4065
+  },
+  "LightGBM | engineered features": {
+   "auc": 0.866,
+   "auc_sd": 0.0057,
+   "avg_precision": 0.7051,
+   "accuracy": 0.8652,
+   "f1_at_0.5": 0.6043,
+   "f1_tuned": 0.6271,
+   "top_decile_capture": 0.4081
+  },
+  "CatBoost | engineered features": {
+   "auc": 0.8678,
+   "auc_sd": 0.0064,
+   "avg_precision": 0.7068,
+   "accuracy": 0.8642,
+   "f1_at_0.5": 0.5941,
+   "f1_tuned": 0.6267,
+   "top_decile_capture": 0.4071
+  },
+  "Blend: XGBoost + LightGBM + CatBoost": {
+   "auc": 0.8691,
+   "auc_sd": 0.0056,
+   "avg_precision": 0.7102,
+   "accuracy": 0.8656,
+   "f1_at_0.5": 0.5994,
+   "f1_tuned": 0.6279,
+   "top_decile_capture": 0.4104
+  }
+ },
+ "best_feature_set": {
+  "XGBoost": "original fields",
+  "LightGBM": "original fields",
+  "CatBoost": "original fields"
+ },
+ "smote_leaky": {
+  "auc": 0.9232,
+  "accuracy": 0.8496,
+  "f1": 0.8492
+ },
+ "smote_correct": {
+  "auc": 0.8299,
+  "accuracy": 0.8119,
+  "f1": 0.5745
+ },
+ "protocol": "repeated stratified 5-fold x3, out-of-fold"
+}
