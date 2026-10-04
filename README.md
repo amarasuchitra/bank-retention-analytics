@@ -4,8 +4,6 @@ Why do bank customers leave? This project answers it through behaviour (activity
 
 **Live dashboard:** https://bank-retention-analytics.streamlit.app
 
-**Research paper:** [paper/Amara_Suchitra_Bank_Retention_IEEE.pdf](paper/Amara_Suchitra_Bank_Retention_IEEE.pdf)
-
 ## Key findings
 
 | Finding | Evidence |
@@ -25,12 +23,10 @@ data/European_Bank.csv        the dataset
 src/analysis.py               validation, profiles, KPIs, index, churn model
 src/model_benchmark.py        seven-model comparison and the SMOTE leakage test
 src/model_reliability.py      false alarms, calibration, accuracy and F1 for the top models
-src/figures.py                figures for the paper
-outputs/metrics.json          every number used in the paper and dashboard
+outputs/metrics.json          every number used in the dashboard
 outputs/customers_scored.csv  each customer with profile, index, tier and risk
 web/                          the dashboard (HTML, CSS, JavaScript)
 streamlit_app/app.py          Streamlit entry point that serves the dashboard
-paper/                        IEEE paper, executive summary, LaTeX sources
 ```
 
 ## Run it

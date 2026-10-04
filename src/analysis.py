@@ -2,7 +2,7 @@
 
 Run:  python src/analysis.py
 Reads data/European_Bank.csv, writes outputs/metrics.json (every number used in the
-paper and dashboard) and web/data.js (one compact row per customer for the dashboard).
+dashboard) and web/data.js (one compact row per customer for the dashboard).
 """
 import json
 import os
